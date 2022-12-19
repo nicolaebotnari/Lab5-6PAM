@@ -1,0 +1,63 @@
+.location-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 16px;
+
+  p {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FF6861;
+    margin: 0 0 4px 0;
+  }
+
+  h6 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $mainDarkColor;
+    margin: 0;
+
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+  }
+
+  a {
+    margin-top: 4px;
+    position: relative;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+
+    .profile-status {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border: 3px solid #f9f9f9;
+      border-radius: 50%;
+      top: 34px;
+      left: 34px;
+      display: inline-block;
+
+      &.active {
+        background: $activeStatusColor;
+      }
+
+      &.offline {
+        background: $offlineStatusColor;
+      }
+    }
+  }
+}

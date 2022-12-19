@@ -1,0 +1,58 @@
+.homepage {
+  padding: 0 20px;
+  margin: 0;
+  overflow: hidden;
+  margin-bottom: 100px;
+
+  @media screen and (min-width: 375px) {
+    padding: 0 24px;
+  }
+}
+
+.events-slider {
+  overflow: visible;
+
+  .swiper-slide {
+    width: auto !important;
+  }
+}
+
+.upcoming-events {
+  .upcoming-events__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 12px;
+
+    h5,
+    a {
+      font-family: "Gilroy";
+      font-style: normal;
+      color: $mainDarkColor;
+      margin: 0;
+      padding: 0;
+    }
+
+    h5 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      opacity: 0.7;
+      text-decoration: none;
+      color: #FF6861;
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}

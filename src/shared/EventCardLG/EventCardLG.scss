@@ -1,0 +1,76 @@
+.event-card-lg {
+
+  .event-card__info {
+    width: 310px;
+    height: 252px;
+    border-radius: 12px;
+    position: relative;
+
+    .event-card__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    .event-card__img-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      top: 0;
+      left: 0;
+      background: linear-gradient(
+        359.29deg,
+        rgba(28, 30, 35, 0.7) 31.84%,
+        rgba(28, 30, 35, 0) 123.76%
+      );
+      z-index: 2;
+    }
+
+    .event-card__title {
+      position: absolute;
+      z-index: 3;
+      font-family: "Gilroy";
+      font-style: normal;
+      line-height: 22px;
+      font-weight: 700;
+      color: $white;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      bottom: 36px;
+      left: 16px;
+      width: 100%;
+    }
+
+    .event-card__location {
+      position: absolute;
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: $white;
+      opacity: 0.9;
+      bottom: 16px;
+      left: 16px;
+      z-index: 3;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .event-card__description {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: $mainDarkColor;
+    padding: 0;
+    margin: 10px 0 0 6px;
+  }
+}
